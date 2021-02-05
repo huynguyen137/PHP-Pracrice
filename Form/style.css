@@ -1,0 +1,24 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.blueText {
+	color: blue;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.button {
+	display: block;
+	border: none;
+	background: black;
+	color: white;
+	padding: 15px 10px;
+	margin: 10px auto;
+}
+.userName, .email, .fullName, .password {
+	width: 40%;
+}
