@@ -22,3 +22,7 @@
 .userName, .email, .fullName, .password {
 	width: 40%;
 }
+.vertical {
+	display: flex;
+	flex-direction: column-reverse;
+}
