@@ -43,7 +43,7 @@
 			$ERROR['mailERR'] = "*Hãy nhập email của bạn!";
 		} else {
 			$mail = $_POST['mail'];
-			if(!filter_var($mail, FILTER_VALIDATE_EMAIL) {
+			if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
 				$ERROR['mailERR'] = "*Email không hợp lệ!";
 			}
 		}
@@ -57,8 +57,10 @@
 			}
 		}
 
-		if (!array_filter($ERROR)) {
-			header('location: crud-insert.php')
+		if (array_filter($ERROR)) {
+			header('location: error-message.php');
+		} else {
+			header('location: crud-insert.php');
 		}
 	}
  ?>
