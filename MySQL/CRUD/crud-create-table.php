@@ -11,7 +11,7 @@
 	Phone INT
 	)";
 
-	query($TABLE);
+	$conn->query($TABLE);
 
 	$conn->close();
  ?>

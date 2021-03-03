@@ -58,9 +58,10 @@
 		}
 
 		if (array_filter($ERROR)) {
-			header('location: error-message.php');
+			
 		} else {
-			header('location: crud-insert.php');
+			include 'crud-insert.php';
+			header('location: success-message.php');
 		}
 	}
  ?>

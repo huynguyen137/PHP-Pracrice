@@ -1,19 +1,21 @@
 <?php 
 	include "crud-connect.php";
 
-	$customer = $_POST['customer'];
-	$carName = $_POST['carName'];
-	$carYear = $_POST['carYear'];
-	$address = $_POST['address'];
-	$mail = $_POST['mail'];
-	$phone = $_POST['phone'];
-
 	$INSERT = "INSERT INTO Customer(CustomerName, CarName, Year, Address, Email, Phone)
-	VALUES ('$customer', '$carName', '$carYear', '$address', '$address', '$mail', '$phone')";
+	VALUES (?, ?, ?, ?, ?, ?)";
 
-	query($INSERT);
+	$stmt= $conn->prepare($INSERT);
+	$stmt->bind_param("ssissi", $insertCUSTOMER, $insertCARNAME, $insertCARYEAR, $insertADDRESS, $insertEMAIL, $insertPHONE);
 
+	$insertCUSTOMER = $_POST['customer'];
+	$insertCARNAME = $_POST['carName'];
+	$insertCARYEAR = $_POST['carYear'];
+	$insertADDRESS = $_POST['address'];
+	$insertEMAIL = $_POST['mail'];
+	$insertPHONE = $_POST['phone'];
+	$stmt->execute();
+
+	$stmt->close();
 	$conn->close();
 
-	header('location: success-message.php');
  ?>
