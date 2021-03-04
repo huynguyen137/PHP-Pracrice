@@ -24,30 +24,29 @@
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
 			<div>
 				<label>Họ và tên </label>
-				<input type="text" name="customer" value="<?php echo(htmlspecialchars($printCUSTOMER)); ?>">
+				<input type="text" name="customer" value="<?php echo $printCUSTOMER; ?>">
 			</div>
 			<div>
 				<label>Tên xe </label>
-				<input type="text" name="carName" value="<?php echo(htmlspecialchars($printCARNAME)); ?>">
+				<input type="text" name="carName" value="<?php echo $printCARNAME; ?>">
 			</div>
 			<div>
 				<label>Năm mua xe </label>
-				<input type="number" name="carYear" value="<?php echo(htmlspecialchars($printCARYEAR)); ?>">
+				<input type="number" name="carYear" value="<?php echo $printCARYEAR; ?>">
 			</div>
 			<div>
 				<label>Địa chỉ </label>
-				<input type="text" name="address" value="<?php echo(htmlspecialchars($printADDRESS)); ?>">
+				<input type="text" name="address" value="<?php echo $printADDRESS; ?>">
 			</div>
 			<div>
 				<label>Email </label>
-				<input type="email" name="mail" value="<?php echo(htmlspecialchars($printEMAIL)); ?>">
+				<input type="email" name="mail" value="<?php echo $printEMAIL; ?>">
 			</div>
 			<div>
 				<label>Số điện thoại </label>
-				<input type="number" name="phone" value="<?php echo(htmlspecialchars($printPHONE)); ?>">
+				<input type="number" name="phone" value="<?php echo $printPHONE; ?>">
 			</div>
 			<div>
-				<input type="submit" name="done" value="OK">
 				<input type="submit" name="update" value="Cập nhật">
 			</div>
 		</form>
