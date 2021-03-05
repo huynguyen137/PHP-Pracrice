@@ -50,7 +50,7 @@
 			</form>
 		</div>
 		<div>
-			<a href="crud-info-checking.php">Kiểm tra và cập nhật thông tin</a>
+			<a href="crud-info-checking.php" class="blueText">Kiểm tra và cập nhật thông tin</a>
 		</div>
 	</div>
 </body>

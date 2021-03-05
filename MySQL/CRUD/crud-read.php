@@ -1,10 +1,10 @@
 <?php 
-	include 'crud-connect.php';
-
 	$printCUSTOMER = $printCARNAME= $printCARYEAR= $printADDRESS= $printEMAIL= $printPHONE = "";
 	$id= $key="";
 
 	if(isset($_GET['check'])) {
+		include 'crud-connect.php';
+
 		$key = $_GET['phone'];
 		$READ = "SELECT * FROM Customer WHERE Phone = $key ";
 		$result = $conn->query($READ);
@@ -18,8 +18,6 @@
 		$printEMAIL = $print["Email"];
 		$printPHONE = $print["Phone"];
 
-
+		$conn->close();
 	}
-
-	$conn->close();
- ?>
+?>

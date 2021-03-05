@@ -1,8 +1,12 @@
 <?php 
-	include 'crud-connect.php';
-
 	if (isset($_POST['update'])) {
-		if ($_POST['customer'] != $printCUSTOMER || $_POST['carName'] != $printCARNAME || $_POST['carYear'] != $printCARYEAR || $_POST['address'] != $printADDRESS || $_POST['mail'] != $printEMAIL || $_POST['phone'] != $printPHONE) {
+		include 'crud-connect.php';
+		$getID = $_POST['id'];
+		$FETCH = "SELECT * FROM Customer WHERE id = $getID ";
+		$result = $conn->query($FETCH);
+		$checking = $result->fetch_assoc();
+
+		if ($_POST['customer'] != $checking['CustomerName'] || $_POST['carName'] != $checking['CarName'] || $_POST['carYear'] != $checking['Year'] || $_POST['address'] != $checking['Address'] || $_POST['mail'] != $checking['Email'] || $_POST['phone'] != $checking['Phone']) {
 
 			$updateCUSTOMER = $_POST['customer'];
 			$updateCARNAME = $_POST['carName'];
@@ -12,20 +16,19 @@
 			$updatePHONE = $_POST['phone'];
 
 			$UPDATE = "UPDATE Customer 
-					SET CustomerName=$updateCUSTOMER,
-						CarName=$updateCARNAME,
-						Year=$updateCARYEAR,
-						Address=$updateADDRESS,
-						Email = $updateEMAIL,
-						Phone =$updatePHONE
-					WHERE id= $id";
+					SET CustomerName='$updateCUSTOMER',
+						CarName='$updateCARNAME',
+						Year='$updateCARYEAR',
+						Address='$updateADDRESS',
+						Email = '$updateEMAIL',
+						Phone ='$updatePHONE'
+					WHERE id= $getID";
 
-		$conn->query($UPDATE);
+			$conn->query($UPDATE);
 
-		$conn->close();
+			$conn->close();
 
-		header('location: success-message.php');
+			header('location: success-message.php');
 		}
 	}
-
- ?>
+?>
