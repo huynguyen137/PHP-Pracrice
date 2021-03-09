@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blog của Huy</title>
+	<title>Thành viên nổi bật</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main-style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
@@ -14,26 +14,6 @@
 					<a href="home.php"><img src="../assets/img/logo-auto-01.jpg" alt="Logo" class="logo"></a>
 					<div id="title">
 						<p class="montserrat-font px310 logo-txt">BLOG CỦA HUY</p>
-					</div>
-				</div>
-				<div id="login"><!-- phần này chỉ hiện ra khi người dùng chưa đăng nhập -->
-					<div class="wrap login">
-						<form method="post" action="check-info.php" class="wrap space-between">
-							<div class="login-box">
-								<label for="account" class="montserrat-font">Email hoặc số điện thoại</label>
-								<input type="text" name="acc" id="account" class="input">
-							</div>
-							<div class="login-box">
-								<label for="password" class="montserrat-font">Mật khẩu</label>
-								<input type="password" name="pwd" id="password" class="input">
-							</div>
-							<div>
-								<input type="submit" name="submit" value="Đăng nhập" class="button montserrat-font px15">
-							</div>
-						</form>
-					</div>
-					<div>
-						<a href="sign-up.php" class="montserrat-font no-underline">Chưa có tài khoản?Đăng ký ngay</a>
 					</div>
 				</div>
 			</div>
@@ -64,47 +44,13 @@
 					<p class="nunito-sans-font">Số lượng bài viết tháng này: </p>
 				</div>
 			</aside>
-			<section>
-				<div class="wrap main-post">
-					<div class="thumb">
-						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
-					</div>
-					<div class="describe">
-						<div class="title montserrat-font bold-txt px40 ">
-							<a href="post.php" class="no-underline black-txt">Tiêu đề bài viết</a>
-						</div>
-						<div class="text nunito-sans-font px20">
-							<p>Tóm tắt bài viết</p>
-						</div>
+			<div class="chart">
+				<div class="white-field">
+					<div>
+						<!-- Bảng xếp hạng thành viên -->
 					</div>
 				</div>
-				<div class="wrap main-post">
-					<div class="thumb">
-						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
-					</div>
-					<div class="describe">
-						<div class="title montserrat-font bold-txt px40 ">
-							<a href="post.php" class="no-underline black-txt">Tiêu đề bài viết</a>
-						</div>
-						<div class="text nunito-sans-font px20">
-							<p>Tóm tắt bài viết</p>
-						</div>
-					</div>
-				</div>
-				<div class="wrap main-post">
-					<div class="thumb">
-						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
-					</div>
-					<div class="describe">
-						<div class="title montserrat-font bold-txt px40 ">
-							<a href="post.php" class="no-underline black-txt">Tiêu đề bài viết</a>
-						</div>
-						<div class="text nunito-sans-font px20">
-							<p>Tóm tắt bài viết</p>
-						</div>
-					</div>
-				</div>
-			</section>
+			</div>
 		</div>
 		<footer>
 			<div class="contact">

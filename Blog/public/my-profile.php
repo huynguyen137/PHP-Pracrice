@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tiêu đề bài viết</title>
+	<title>Trang cá nhân</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main-style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
 </head>
 <body>
-	<div>
+	<div class="center">
 		<header class="wrap">
 			<div id="top-header" class="space-between wrap">
 				<div id="logo">
@@ -28,28 +28,35 @@
 				<li><a href="tag-tech-home.php" class="montserrat-font no-underline black-txt">Đam mê công nghệ</a></li>
 			</ul>
 		</nav>
-		<div>
-			<aside>
-				<div class="trending-post">
-					<p class="montserrat-font px30">Các bài viết mới nhất</p>
-					<ul><!-- Danh mục các bài viết mới nhất xếp theo ngày đăng(demo, sau cần chỉnh sửa lại bằng code php dùng hàm for) -->
-						<li><a href="post.php" class="nunito-sans-font px20 no-underline">Bài viết</a></li>
-						<li><a href="post.php" class="nunito-sans-font px20 no-underline">Bài viết</a></li>
-						<li><a href="post.php" class="nunito-sans-font px20 no-underline">Bài viết</a></li>
-						<li><a href="post.php" class="nunito-sans-font px20 no-underline">Bài viết</a></li>
-						<li><a href="post.php" class="nunito-sans-font px20 no-underline">Bài viết</a></li>
-					</ul>
+		<div id="account-detail">
+			<div class="personal-info">
+				<div class="avatar">
+					<img src="../assets/img/IMG_1170.JPG" alt="Ảnh đại diện">
 				</div>
-				<div class="counter">
-					<p class="nunito-sans-font">Số lượng bài viết tháng này: </p>
+				<div class="background">
+					<h4>Họ và tên</h4>
+					<div class="basic-info">
+						<p>Ngày tháng năm sinh</p>
+						<p>Số bài viết</p>
+						<p>Trích dẫn</p>
+					</div>
 				</div>
-			</aside>
-			<section>
-				<h3>Tiêu đề bài viết</h3>
-				<p>By Người đăng</p>
-				<p>Ngày đăng bài</p>
-				<p>Nội dung bài viết</p>
-			</section>
+			</div>
+			<div class="all-post">
+				<div class="wrap main-post">
+					<div class="thumb">
+						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
+					</div>
+					<div class="describe">
+						<div class="title montserrat-font bold-txt px40 ">
+							<p>Tiêu đề bài viết</p>
+						</div>
+						<div class="text nunito-sans-font px20">
+							<p>Tóm tắt bài viết</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div class="contact">

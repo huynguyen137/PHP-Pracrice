@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*General*/
+.wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.space-between {
+	justify-content: space-between;
+}
+.button {
+	margin-top: 35%;
+	padding: 9px 5px;
+	color: #fff;
+	background: #1A1555;
+}
+.center {
+	margin: 0 auto;
+}
+	/*Font sizing*/
+.px15 {
+	font-size: 15px;
+}
+.px20 {
+	font-size: 20px;
+}
+.px30 {
+	font-size: 30px;
+}
+.px40 {
+	font-size: 40px;
+}
+.px310 {
+	font-size: 310%;
+}
+	/*Text styling*/
+.montserrat-font {
+	font-family: Montserrat;
+}
+.nunito-sans-font {
+	font-family: 'Nunito Sans';
+}
+.no-underline {
+	text-decoration: none;
+}
+.black-txt {
+	color: #000;
+}
+.bold-txt {
+	font-weight: bold;
+}
+
+
+/*Header*/
+header {
+	
+}
+#top-header {
+	margin: 0 auto;
+	position: relative;
+}
+#logo {
+	max-width: 20%;
+	display: flex;
+	flex-direction: row;
+}
+.logo {
+	max-width: 100%;
+	max-height: 80%;
+}
+.logo-txt {
+	max-width: 165px;
+}
+#title {
+	position: relative;
+}
+#title p {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.login {
+	
+}
+#login {
+	max-width: 40%;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.login-box {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+}
+.login-box label {
+	margin-bottom: 12px;
+}
+.input {
+	height: 36px;
+}
+/*Nav Bar*/
+nav {
+	margin: 20px 0;
+	display: block;
+}
+nav a {
+	padding: 15px 43px;
+	background-color: #A5A3A3;
+}
+nav li:hover, nav li:hover a {
+	background-color: #000;
+	color: #fff;
+}
+/*Content*/ 
+#content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: stretch;
+	margin: 40px 30px;
+}
+aside {
+	flex-grow: 1;
+}
+.trending-post {
+	margin-bottom: 20px;
+}
+.trending-post li {
+	margin: 10px 0 0 5px;
+}
+section {
+	flex-grow: 12;
+}
+.main-post {
+	margin: 30px 0;
+}
+.thumb {
+	width: 25%;
+	position: relative;
+	padding-bottom: 25%;
+}
+.thumb img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.describe {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+}
+.title, .text {
+	margin-bottom: 40px;
+}
+/*Footer*/
+footer {
+	background-color: #000;
+	padding: 40px 0;
+}
+.copyright, .info {
+	color: #fff;
+	margin: 0 0 15px 50px;
+}
