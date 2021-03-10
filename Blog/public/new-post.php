@@ -3,6 +3,7 @@
 <head>
 	<title>Đăng bài viết mới</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main-style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/new-post-style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
 </head>
@@ -27,17 +28,22 @@
 			<li><a href="tag-tech-home.php" class="montserrat-font no-underline black-txt">Đam mê công nghệ</a></li>
 		</ul>
 	</nav>
-	<section>
-		<form method="post" action="post-checking.php">
-			<input type="text" name="title" placeholder="Tiêu đề bài viết" required>
-			<select name="tag">
-				<option hidden>Gắn nhãn cho bài viết</option>
-				<option>Xe</option>
-				<option>Công nghệ</option>
-			</select>
-			<textarea class="textField" required></textarea>
-			<input type="submit" name="submit" value="Đăng">
-		</form>
+	<section class="post-field">
+		<div>
+			<p class="montserrat-font bold-txt px40">Đăng bài viết mới</p>
+		</div>
+		<div>
+			<form method="post" action="post-checking.php">
+				<input type="text" name="title" placeholder="Tiêu đề bài viết" required>
+				<select name="tag">
+					<option hidden>Gắn nhãn cho bài viết</option>
+					<option>Xe</option>
+					<option>Công nghệ</option>
+				</select>
+				<textarea class="textField" required></textarea>
+				<input type="submit" name="submit" value="Đăng">
+			</form>
+		</div>
 	</section>
 	<footer>
 		<div class="contact">

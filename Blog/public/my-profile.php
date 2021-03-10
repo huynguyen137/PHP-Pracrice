@@ -3,6 +3,7 @@
 <head>
 	<title>Trang cá nhân</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main-style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/profile-style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
 </head>
@@ -30,19 +31,45 @@
 		</nav>
 		<div id="account-detail">
 			<div class="personal-info">
-				<div class="avatar">
-					<img src="../assets/img/IMG_1170.JPG" alt="Ảnh đại diện">
-				</div>
-				<div class="background">
-					<h4>Họ và tên</h4>
-					<div class="basic-info">
-						<p>Ngày tháng năm sinh</p>
-						<p>Số bài viết</p>
-						<p>Trích dẫn</p>
+					<div class="avatar">
+						<img src="../assets/img/IMG_1170.JPG" alt="Ảnh đại diện">
 					</div>
-				</div>
+					<div class="background">
+						<h4 class="montserrat-font bold-txt px40">Họ và tên</h4>
+						<div class="basic-info">
+							<p class="nunito-sans-font px20">Ngày tháng năm sinh</p>
+							<p class="nunito-sans-font px20">Số bài viết</p>
+							<p class="nunito-sans-font px20">Trích dẫn</p>
+						</div>
+					</div>
 			</div>
 			<div class="all-post">
+				<div class="wrap main-post">
+					<div class="thumb">
+						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
+					</div>
+					<div class="describe">
+						<div class="title montserrat-font bold-txt px40 ">
+							<p>Tiêu đề bài viết</p>
+						</div>
+						<div class="text nunito-sans-font px20">
+							<p>Tóm tắt bài viết</p>
+						</div>
+					</div>
+				</div>
+				<div class="wrap main-post">
+					<div class="thumb">
+						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">
+					</div>
+					<div class="describe">
+						<div class="title montserrat-font bold-txt px40 ">
+							<p>Tiêu đề bài viết</p>
+						</div>
+						<div class="text nunito-sans-font px20">
+							<p>Tóm tắt bài viết</p>
+						</div>
+					</div>
+				</div>
 				<div class="wrap main-post">
 					<div class="thumb">
 						<img src="../assets/img/69649469_399153277470397_2312614931393937408_n.jpg" alt="Ảnh minh họa bài viết">

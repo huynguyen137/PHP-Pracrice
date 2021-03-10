@@ -58,7 +58,6 @@ table {
 	justify-content: space-between;
 }
 .button {
-	margin-top: 35%;
 	padding: 9px 5px;
 	color: #fff;
 	background: #1A1555;
@@ -66,12 +65,16 @@ table {
 .center {
 	margin: 0 auto;
 }
+
 	/*Font sizing*/
 .px15 {
 	font-size: 15px;
 }
 .px20 {
 	font-size: 20px;
+}
+.px25 {
+	font-size: 25px;
 }
 .px30 {
 	font-size: 30px;
@@ -147,6 +150,9 @@ header {
 }
 .input {
 	height: 36px;
+}
+#login input[type="submit"] {
+	margin-top: 35%;
 }
 /*Nav Bar*/
 nav {

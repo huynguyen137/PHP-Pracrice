@@ -3,6 +3,7 @@
 <head>
 	<title>Đăng ký tài khoản</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/main-style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/sign-up-style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito Sans">
 </head>
@@ -18,30 +19,35 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<div>
+		<section class="sign-up-form">
+			<div class="sign-title">
+				<p class="montserrat-font bold-txt px40">Đăng ký tài khoản</p>
+			</div>
+			<div class="form">
 				<form method="post" action="new-user-validate.php">
 					<div>
-						<label for="fullname">Họ và tên</label>
-						<input type="text" name="fullname" id="fullname" required>
+						<label for="fullname" class="nunito-sans-font px30">Họ và tên</label><br>
+						<input type="text" name="fullname" id="fullname" class="sign-input" required>
 					</div>
 					<div>
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" required>
+						<label for="email" class="nunito-sans-font px30">Email</label><br>
+						<input type="email" name="email" id="email" class="sign-input" required>
 					</div>
 					<div>
-						<label for="phone">Số điện thoại</label>
-						<input type="text" name="phone" id="phone" required>
+						<label for="phone" class="nunito-sans-font px30">Số điện thoại</label><br>
+						<input type="text" name="phone" id="phone" class="sign-input" required>
 					</div>
 					<div>
-						<label for="password">Mật khẩu</label>
-						<input type="password" name="pwd" id="password" required>
+						<label for="password" class="nunito-sans-font px30">Mật khẩu</label><br>
+						<input type="password" name="pwd" id="password" class="sign-input" required>
 					</div>
 					<div>
-						<label for="re-pwd">Họ và tên</label>
-						<input type="password" name="re-pwd" id="re-pwd" required>
+						<label for="re-pwd" class="nunito-sans-font px30">Nhập lại mật khẩu</label><br>
+						<input type="password" name="re-pwd" id="re-pwd" class="sign-input" required>
 					</div>
-					<input type="submit" name="submit" value="Đăng ký">
+					<div>
+						<input type="submit" name="submit" value="Đăng ký" class="button">
+					</div>
 				</form>
 			</div>
 		</section>
